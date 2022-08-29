@@ -3,12 +3,11 @@ layout: presentation
 ---
 
 {% for post in site.slides %}
-	{% include slide.html %}
+	{% include slide.html %} - Mawsn
 	<div class="page-break"></div>
 {% endfor %}
 {% unless site.simple-slideshow %}
 {% if site.overview %}
 <section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-<br>
 {% endif %}
 {% endunless %}
